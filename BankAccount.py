@@ -35,7 +35,3 @@ mitchell_bank_account.deposit(400000)
 mitchell_bank_account.print_statment()
 mitchell_bank_account.widthdraw(150)
 mitchell_bank_account.print_statment()
-
-# print(f"Account No.: ****{str(self.account_number)[4:]}")
-
-# in my case, account_number is an int. so I first convert it to a string, and slice the string to only show the last four digits.
