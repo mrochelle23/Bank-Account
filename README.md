@@ -141,8 +141,10 @@ Try to create other users that include:
 2. Different account number
 3. Different amounts deposited
 4. Different amounts withdrawn
+5. Have at least one user that withdraws too much and is charged a $10 fee and prints an Insuffient funds message
 
 ## Strech Challenge Solutions
+This creates two new users who are all depositing different amounts, withdrawing amounts and 
 ```python
 class BankAccount:
     def __init__(self, full_name, account_number):
@@ -190,11 +192,17 @@ joi_bank_account.widthdraw(100)
 joi_bank_account.print_statment()
 print("___________________________________________________")
 
-joi_bank_account = BankAccount("John Smith", "****7845")
-joi_bank_account.deposit(4000)
-joi_bank_account.print_statment()
-joi_bank_account.widthdraw(200)
-joi_bank_account.print_statment()
+john_bank_account = BankAccount("John Smith", "****7845")
+john_bank_account.deposit(4000)
+john_bank_account.print_statment()
+john_bank_account.widthdraw(200)
+john_bank_account.print_statment()
+
+cody_bank_accoumt = BankAccount("Cody Jenkins", "****5649")
+cody_bank_account.deposit(5000)
+cody_bank_account.print_statment()
+cody_bank_account.widthdraw(6500)
+cody_bank_account.print_statment()
 ```
 
 ## Commit
