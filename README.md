@@ -72,7 +72,7 @@ What are some actions the user can take? How about depositing money? What other 
 Let's define our first method called ```deposit```. This will let us call something like this: ```mitchell_bank_account.depsit(self, amount)```. And then we can have ```self.balance += amount``` and print
 ```print(f'Amount deposited: ${amount}.00 -> New Balance: ${self.balance}.00')```
 
-The user can also withdraw money but if they try to withdraw more than the current available balance is, they will get a "Insuffienct funds" message and be charged a $10 fee
+The user can also withdraw money but if they try to withdraw more than the current available balance is, they will get a "Insuffienct funds" message and be charged a $10 overdraft fee
 
 ```python
 def widthdraw(self, amount):
