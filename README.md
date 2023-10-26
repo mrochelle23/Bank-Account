@@ -198,7 +198,7 @@ john_bank_account.print_statment()
 john_bank_account.widthdraw(200)
 john_bank_account.print_statment()
 
-cody_bank_accoumt = BankAccount("Cody Jenkins", "****5649")
+cody_bank_account = BankAccount("Cody Jenkins", "****5649")
 cody_bank_account.deposit(5000)
 cody_bank_account.print_statment()
 cody_bank_account.widthdraw(6500)
