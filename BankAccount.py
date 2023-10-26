@@ -21,7 +21,7 @@ class BankAccount:
         return self.balance
     
     def add_interest(self):
-        interest = self.balance *  0.00083
+        interest = self.balance * 0.00083
         self.balance += interest
     
     def print_statment(self):
@@ -35,3 +35,17 @@ mitchell_bank_account.deposit(400000)
 mitchell_bank_account.print_statment()
 mitchell_bank_account.widthdraw(150)
 mitchell_bank_account.print_statment()
+print("___________________________________________________")
+
+joi_bank_account = BankAccount("Joi Anderson", "****5678")
+joi_bank_account.deposit(1000)
+joi_bank_account.print_statment()
+joi_bank_account.widthdraw(100)
+joi_bank_account.print_statment()
+print("___________________________________________________")
+
+joi_bank_account = BankAccount("John Smith", "****7845")
+joi_bank_account.deposit(4000)
+joi_bank_account.print_statment()
+joi_bank_account.widthdraw(200)
+joi_bank_account.print_statment()
