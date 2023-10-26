@@ -27,7 +27,7 @@ class BankAccount:
     def print_statment(self):
         print(f"{self.full_name}")
         print(f"Account No.: {self.account_number}")
-        print(f"Balance: {self.balance}")
+        print(f"Balance: {self.balance}.00")
 
 
 mitchell_bank_account = BankAccount("Mitchell", "03141592")
